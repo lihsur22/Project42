@@ -21,8 +21,6 @@ function draw() {
   mAngle = map(mn, 0, 60, 0, 360);
   hAngle = map(h % 12, 0, 12, 0, 360);
 
-  //console.log(h + ":" + min + ":" + sec);
-
   stroke("black");
   fill(200)
   ellipse(400,400,400)
@@ -38,4 +36,14 @@ function draw() {
   sHand.display();
   mHand.display();
   hHand.display();
+
+  strokeWeight(1);
+  textSize(30);
+  textAlign(CENTER);
+  stroke("#9C4E97");
+  text(mn, 400, 550);
+  stroke("#D70071");
+  text(sec, 463, 550);
+  stroke("#0035AA");
+  text(h, 337, 550);
 }
